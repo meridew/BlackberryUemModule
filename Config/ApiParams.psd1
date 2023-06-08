@@ -39,4 +39,14 @@
             'authorization' = ''
         }
     }
+
+    'Search-UemUser'     = @{
+        'Uri'     = '/api/v1/users?searchString={searchString}&searchField={searchField}'
+        'Method'  = 'GET'
+        'Headers' = @{
+            'content-type'  = 'application/vnd.blackberry.users-v1+json'
+            'authorization' = ''
+        }
+
+    }
 }

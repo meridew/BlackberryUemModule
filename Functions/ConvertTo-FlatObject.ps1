@@ -16,7 +16,7 @@ function ConvertTo-FlatObject
             {
                 $property.Value | ConvertTo-FlatObject -Parent $($Parent + $property.Name + "_")
             }
-            elseif ($property.Value -is [System.Collections.IList] -and $property.Value -ne $null)
+            elseif ($property.Value -is [System.Collections.IList] -and $null -ne $property.Value)
             {
                 $index = 0
                 foreach ($value in $property.Value)
