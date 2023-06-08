@@ -1,2 +1,2 @@
 # BlackberryUemModule
- PowerShell module wrapper for Blackberry UEM rest API
+ PowerShell module wrapper for BlackBerry UEM web services rest API 
