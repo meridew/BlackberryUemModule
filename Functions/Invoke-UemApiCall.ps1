@@ -1,4 +1,4 @@
-function return Invoke-UemApiCall
+function Invoke-UemApiCall
 {
     [CmdletBinding()]
     param (
@@ -37,7 +37,7 @@ function return Invoke-UemApiCall
         if ($response.count -eq $PageSize)
         {
             $Offset += $PageSize
-            
+
             return Invoke-UemApiCall @CallParams -Offset $Offset -PageSize $PageSize -MaxResults $MaxResults
         }
 
