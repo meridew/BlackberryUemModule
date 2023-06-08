@@ -41,12 +41,20 @@
     }
 
     'Search-UemUser'     = @{
-        'Uri'     = '/api/v1/users?searchString={searchString}&searchField={searchField}'
+        'Uri'     = '/api/v1/users?query={searchField}={searchString}'
         'Method'  = 'GET'
         'Headers' = @{
             'content-type'  = 'application/vnd.blackberry.users-v1+json'
             'authorization' = ''
         }
+    }      
 
+    'Search-UemAppGroup' = @{
+        'Uri'     = '/api/v1/applicationGroups?query=name={$name}'
+        'Method'  = 'GET'
+        'Headers' = @{
+            'content-type'  = 'application/vnd.blackberry.applicationgroups-v1+json'
+            'authorization' = ''
+        }
     }
 }
