@@ -1,4 +1,4 @@
-function Get-UemUserDevices
+function Get-UemUserDevice
 {
     [CmdletBinding()]
     param (
