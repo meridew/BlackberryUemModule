@@ -9,5 +9,5 @@ function Get-UemUserDevices
     $functionConfig = Get-UemApiFunctionConfig $MyInvocation.MyCommand.Name $Region
     $functionConfig.Uri = $functionConfig.Uri -replace '{userGuid}', $UserGuid
 
-    Invoke-UemApiCall @functionConfig
+    return Invoke-UemApiCall @functionConfig
 }

@@ -7,5 +7,5 @@ function Get-UemAuthToken
 
     $functionConfig = Get-UemApiFunctionConfig $MyInvocation.MyCommand.Name $Region
 
-    Invoke-UemApiCall @functionConfig
+    return Invoke-UemApiCall @functionConfig
 }

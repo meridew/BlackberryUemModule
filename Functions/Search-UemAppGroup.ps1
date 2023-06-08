@@ -10,10 +10,5 @@ function Search-UemAppGroup
 
     $functionConfig.Uri = $functionConfig.Uri -replace '{name}', $Name
 
-    Invoke-UemApiCall @functionConfig
+    return Invoke-UemApiCall @functionConfig
 }
-
-<#  Search-UemAppGroup
-    Field	Type	Description
-    name	string	Name of the application group. Case insensitive exact match.
-#>

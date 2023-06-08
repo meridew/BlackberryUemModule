@@ -57,4 +57,22 @@
             'authorization' = ''
         }
     }
+
+    'Send-UemUserDeviceCommand' = @{
+        'Uri'     = '/api/v1/users/{userGuid}/userDevices/{userDeviceGuid}/commands'
+        'Method'  = 'POST'
+        'Headers' = @{
+            'content-type'  = 'application/vnd.blackberry.command-v1+json'
+            'authorization' = ''
+        }
+    }
+
+    'Get-UemUserDeviceCommandStatus' = @{
+        'Uri'     = '/api/v1/users/{userGuid}/userDevices/{userDeviceGuid}/commands/{commandGuid}'
+        'Method'  = 'GET'
+        'Headers' = @{
+            'content-type'  = 'application/vnd.blackberry.command-v1+json'
+            'authorization' = ''
+        }
+    }
 }

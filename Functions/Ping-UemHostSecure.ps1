@@ -7,5 +7,5 @@ function Ping-UemHostSecure
 
     $functionConfig = Get-UemApiFunctionConfig $MyInvocation.MyCommand.Name $Region
 
-    Invoke-UemApiCall @functionConfig
+    return Invoke-UemApiCall @functionConfig
 }

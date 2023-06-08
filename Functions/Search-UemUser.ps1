@@ -35,5 +35,5 @@ function Search-UemUser
     $functionConfig.Uri = $functionConfig.Uri -replace '{searchString}', $SearchString
     $functionConfig.Uri = $functionConfig.Uri -replace '{pageSize}', $PageSize
     
-    Invoke-UemApiCall @functionConfig
+    return Invoke-UemApiCall @functionConfig
 }
